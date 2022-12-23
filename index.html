@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Tools</title>
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <h1 class="title">Let's play!</h1>
+      <div class="buttons-wrapper">
+        <button>
+          <img
+            id="rock"
+            data-player="Rock"
+            title="rock"
+            src="#"
+            alt="rock"
+            class="play"
+          >
+        </button>
+        <button>
+          <img
+            id="paper"
+            data-player="Paper"
+            title="paper"
+            src="#"
+            alt="paper"
+            class="play"
+          >
+        </button>
+        <button>
+          <img
+            id="scissor"
+            data-player="Scissor"
+            title="scissor"
+            src="#"
+            alt="scissor"
+            class="play"
+          >
+        </button>
+      </div>
+      <ul>
+        <li><a href="#" id="reset">Reset game</a></li>
+        <li>
+          <a href="#" id="link-rules"
+            ><span id="show" class="hidden">Show</span
+            ><span id="hide">Hide</span> rules</a
+          >
+        </li>
+      </ul>
+      <div id="rules" class="info">
+        <h4>"Rock-Paper-Scissors" game's rules:</h4>
+        <p class="info-rules">
+          - Scissors beats a paper, <br >
+          - Paper beats rock, <br >
+          - Rock beats scissors. <br ><br >
+          We play up to three wins!
+        </p>
+      </div>
+      <div id="scoreboard"></div>
+    </div>
+  </body>
+</html>

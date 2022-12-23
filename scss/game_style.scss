@@ -1,0 +1,54 @@
+#scoreboard {
+  & p {
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  & .gameover {
+    padding: 20px;
+    font-size: 2rem;
+  }
+}
+.game-wrapper {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  & .info {
+    text-align: left;
+    line-height: 1.5rem;
+    border: 1px dashed black;
+    border-width: 2px;
+    padding: 20px;
+    border-radius: 5%;
+    & .info-rules {
+      padding-left: 20px;
+    }
+  }
+  & .buttons-wrapper {
+    & button {
+      border: none;
+      background-color: transparent;
+    }
+    & button img {
+      width: 7vw;
+      min-width: 70px;
+      padding: 5px;
+      border-radius: 50%;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.256);
+      transition: all 500ms ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+        background-color: transparent;
+      }
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+}
+.hidden {
+  display: none;
+}
